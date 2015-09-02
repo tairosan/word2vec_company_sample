@@ -21,8 +21,8 @@ class MainHandler(tornado.web.RequestHandler):
     	# decode
     	decoded = urllib.unquote(path)
 
-    	# gensimのword2vecに用意したmodelを読み込む
-        model = gensim.models.Word2Vec.load('stanby_w2v.pkl')
+    	# gensimのword2vecに用意したpklhァイルをmodelとしてを読み込む
+        model = gensim.models.Word2Vec.load('****.pkl')
 
         # 判定結果を繰り返し処理で配列に入れる
         result = []
